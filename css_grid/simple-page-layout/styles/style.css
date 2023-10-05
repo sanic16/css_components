@@ -1,0 +1,40 @@
+.container{
+    width: 800px;
+    height: 500px;
+    background-color: #efefef;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.container div{
+    background-color: royalblue;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+}
+
+.header{
+    grid-area: 1 / 1 / 2 / 5;
+}
+.sidebar{
+    grid-area: 2 / 1 / 5 / 2;
+}
+.main{
+    grid-area: 2 / 2 / 4 / 5;
+}
+.box-1{
+    grid-area: 4 / 2 / 5 / 3;
+}
+.box-2{
+    grid-area: 4 / 3 / 5 / 4;
+}
+.box-3{
+    grid-area: 4 / 4 / 5 / 5;
+}
+.footer{
+    grid-area: 5 / 1 / 6 / 5;
+}
